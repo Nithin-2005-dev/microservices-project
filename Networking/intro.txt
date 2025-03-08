@@ -1,0 +1,50 @@
+📌 Protocols in Networking
+
+1️⃣ TCP (Transmission Control Protocol)└─ Ensures that data reaches its destination completely, correctly, and in order.
+
+2️⃣ UDP (User Datagram Protocol)└─ Sends data without guaranteeing full delivery; it's faster but less reliable.
+
+3️⃣ HTTP (HyperText Transfer Protocol)└─ Defines the format of data transferred between web clients (browsers) and servers.
+
+📌 How Data Moves in the Internet?
+
+✔ Data moves in the form of chunks or packets.✔ Every device on the internet has a unique IP address.✔ To check your public IP, use:
+
+irm http://ipconfig.me   # PowerShell  
+curl -s http://ipconfig.me   # Linux/macOS  
+
+📌 Network Structure
+
+Internet Service Provider (Global IP Address)│└── Modem/Router├── D1 (Private IP1)├── D2 (Private IP2)└── D3 (Private IP3)
+
+📌 How Devices Get IP Addresses?
+
+✔ The modem/router uses DHCP (Dynamic Host Configuration Protocol)└─ Dynamically assigns IP addresses to connected devices in a network.
+
+✔ The router uses NAT (Network Address Translation)└─ Allows multiple devices to share a single public IP by mapping private IPs.
+
+📌 Understanding Port Numbers
+
+✔ Port numbers determine which applications handle incoming/outgoing traffic.✔ Total possible port numbers: 2¹⁶ = 65,536
+
+📌 Commonly Used Ports
+
+HTTP → 80 (Web traffic)
+
+HTTPS → 443 (Secure web traffic)
+
+FTP → 21 (File Transfer Protocol)
+
+SSH → 22 (Secure Shell)
+
+DNS → 53 (Domain Name System)
+
+MongoDB → 27017 (Database service)
+
+📌 Port Ranges
+
+0 - 1023 → Well-known (Reserved) Ports (Used by system services like HTTP, SSH, etc.)
+
+1024 - 49,151 → Registered Ports (Assigned to software applications)
+
+49,152 - 65,535 → Dynamic/Private Ports (Available for temporary use)
